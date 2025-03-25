@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <!-- Configurações básicas -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importação de estilos -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
+    <!-- Título da página -->
+    <title>Heavenly</title>
+</head>
+
+<body>
+
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <h1 class="pe-3 ps-5">Heavenly</h1>
+            </a>
+            <!-- Botão para dispositivos móveis -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Itens da barra de navegação -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#categorias">Categorias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#facilidades">Facilidades</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#novidades">Novidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Carrossel de imagens -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <!-- Botões para cada slide -->
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <!-- Slides do carrossel -->
+        <div class="carousel-inner">
+            <!-- Slide 1: Moda feminina -->
+            <div class="carousel-item active">
+                <!-- Imagens para diferentes tamanhos de tela -->
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/modelf.png"
+                    alt="Modelo feminina vestindo roupas neutras em um fundo cinza">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/modelf.png"
+                    alt="Modelo feminina vestindo roupas neutras em um fundo cinza">
+                <img class="img-fluid d-none d-xl-block w-100" src="assets/desktop/modelf.png"
+                    alt="Modelo feminina vestindo roupas neutras em um fundo cinza">
+                <!-- Legenda do slide -->
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="pb-5"> MODA FEMININA </h1>
+                    <h5>A essência da moda feminina.</h5>
+                    <p>Sinta a confiança, vista a paixão. Seja você!</p>
+                </div>
+            </div>
+            <!-- Slide 2: Moda masculina -->
+            <div class="carousel-item">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/model.png"
+                    alt="Modelo masculino vestindo roupas neutras em um fundo cinza">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/model.png"
+                    alt="Modelo masculino vestindo roupas neutras em um fundo cinza">
+                <img class="img-fluid d-none d-xl-block w-100" src="assets/desktop/model.png"
+                    alt="Modelo masculino vestindo roupas neutras em um fundo cinza">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="pb-5"> MODA MASCULINA </h1>
+                    <h5>A alma da moda masculina.</h5>
+                    <p>Estilo que define personalidades, inspirando confiança.</p>
+                </div>
+            </div>
+            <!-- Slide 3: Moda para dois -->
+            <div class="carousel-item">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/couple.png"
+                    alt="Casal de modelos vestindo roupas neutras em um fundo cinza">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/couple.png"
+                    alt="Casal de modelos vestindo roupas neutras em um fundo cinza">
+                <img class="img-fluid d-none d-xl-block w-100" src="assets/desktop/couple.png"
+                    alt="Casal de modelos vestindo roupas neutras em um fundo cinza">
+                <div class="carousel-caption d-none d-md-block">
+                    <h1 class="pb-5"> MODA PARA DOIS </h1>
+                    <h5>O amor vestido com estilo.</h5>
+                    <p>Unidos pelo estilo, juntos em cada passo.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Controles do carrossel -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+        </button>
+    </div>
+
+    <!-- Seção de categorias de produtos -->
+    <h2 class="text-center m-3 my-xl-5"> Categorias </h2>
+    <div id="categorias" class="container row mx-auto g-4 ">
+
+        <!-- Card da categoria de produto -->
+        <div class="card-p col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/feminino.png"
+                    alt="Modelo feminina sorrindo, está vestindo uma roupa preta">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/feminino.png"
+                    alt="Modelo feminina sorrindo, está vestindo uma roupa preta">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/feminino.png"
+                    alt="Modelo feminina sorrindo, está vestindo uma roupa preta">
+                <!-- Título da categoria -->
+                <div class="card-header">
+                    <p class="text-center fs-5 m-1">Feminino</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-p col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/masculino.png"
+                    alt="Modelo masculino vestindo uma roupa branca">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/masculino.png"
+                    alt="Modelo masculino vestindo uma roupa branca">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/masculino.png"
+                    alt="Modelo masculino vestindo uma roupa branca">
+                <div class="card-header">
+                    <p class="text-center fs-5 m-1 ">Masculino</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-p col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/casal.png"
+                    alt="Casal de modelos abraçados vestindo roupas neutras">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/casal.png"
+                    alt="Casal de modelos abraçados vestindo roupas neutras">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/casal.png"
+                    alt="Casal de modelos abraçados vestindo roupas neutras">
+                <div class="card-header">
+                    <p class="text-center fs-5 m-1">Casal</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-p col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/acessorios.png"
+                    alt="Diversos acessórios dourados em um fundo branco">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/acessorios.png"
+                    alt="Diversos acessórios dourados em um fundo branco">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/acessorios.png"
+                    alt="Diversos acessórios dourados em um fundo branco">
+                <div class="card-header">
+                    <p class="text-center fs-5 m-1">Acessórios</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-p col-6 col-md-4 col-xxl-2">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/calcados.png"
+                    alt="Sapato de salto alto preto em um fundo branco">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/calcados.png"
+                    alt="Sapato de salto alto preto em um fundo branco">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/calcados.png"
+                    alt="Sapato de salto alto preto em um fundo branco">
+                <div class="card-header">
+                    <p class="text-center fs-5 m-1">Calçados</p>
+                </div>
+            </div>
+        </div>
+        <div class="card-p col-6 col-md-4 col-xxl-2">
+            <div class="card ">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/esportes.png"
+                    alt="Modelo vestindo top verde e saia branca enquanto segura uma raquete">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/esportes.png"
+                    alt="Modelo vestindo top verde e saia branca enquanto segura uma raquete">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/esportes.png"
+                    alt="Modelo vestindo top verde e saia branca enquanto segura uma raquete">
+                <div class="card-header">
+                    <p class="text-center fs-5 m-1">Esportes</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Seção de produtos -->
+    <h2 class="text-center m-3 my-xl-5"> Produtos </h2>
+    <div class="container row mx-auto g-4">
+
+        <!-- Produto 1: Blusa Aurora -->
+        <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/produto-feminino.png"
+                    alt="Modelo feminina vestindo blusa branca com babados, gola alta e botões na frente">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/produto-feminino.png"
+                    alt="Modelo feminina vestindo blusa branca com babados, gola alta e botões na frente">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/produto-feminino.png"
+                    alt="Modelo feminina vestindo blusa branca com babados, gola alta e botões na frente">
+                <div class="card-body">
+                    <!-- Título do produto -->
+                    <h5 class="card-title">Blusa Aurora</h5>
+                    <!-- Descrição do produto -->
+                    <p class="card-text">Essa blusa é a definição de sofisticação. Feita com tecido de alta qualidade e
+                        detalhes em babados delicados, esta peça adiciona um toque de romance e elegância a qualquer
+                        look.</p>
+                    <!-- Valor do produto -->
+                    <p class="fw-medium">R$ 189,00</p>
+                    <!-- Botão de ver mais -->
+                    <a href="#" class="btn btn-secondary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 2: Conjunto Luxe -->
+        <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/produto-acessorio.png"
+                    alt="Modelo feminina vestindo um conjunto de colares dourados com diversos tamanhos e pingentes">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/produto-acessorio.png"
+                    alt="Modelo feminina vestindo um conjunto de colares dourados com diversos tamanhos e pingentes">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/produto-acessorio.png"
+                    alt="Modelo feminina vestindo um conjunto de colares dourados com diversos tamanhos e pingentes">
+                <div class="card-body">
+                    <h5 class="card-title">Conjunto Luxe</h5>
+                    <p class="card-text">Esse conjunto de colares é composto por uma variedade de estilos e
+                        comprimentos, estes colares podem ser usados juntos ou separadamente para criar looks únicos e
+                        elegantes.</p>
+                    <p class="fw-medium">R$ 99,00</p>
+                    <a href="#" class="btn btn-secondary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 3: Calça Clássica -->
+        <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/produto-masculino.png"
+                    alt="Modelo masculino vestindo uma calça clássica, com tons claros e uma leve textura xadrez">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/produto-masculino.png"
+                    alt="Modelo masculino vestindo uma calça clássica, com tons claros e uma leve textura xadrez">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/produto-masculino.png"
+                    alt="Modelo masculino vestindo uma calça clássica, com tons claros e uma leve textura xadrez">
+                <div class="card-body">
+                    <h5 class="card-title">Calça Clássica</h5>
+                    <p class="card-text">Essa calça masculina combina estilo e conforto para criar uma peça essencial
+                        para o guarda-roupa de qualquer homem moderno. Feita com tecido de alta qualidade e um corte
+                        impecável.</p>
+                    <p class="fw-medium">R$ 159,00</p>
+                    <a href="#" class="btn btn-secondary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 4: Conjunto Serenity -->
+        <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/produto-esporte.png"
+                    alt="modelo feminina vestindo conjunto de top e legging azul claro enqaunto segura bola de basquete">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/produto-esporte.png"
+                    alt="modelo feminina vestindo conjunto de top e legging azul claro enqaunto segura bola de basquete">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/produto-esporte.png"
+                    alt="modelo feminina vestindo conjunto de top e legging azul claro enqaunto segura bola de basquete">
+                <div class="card-body">
+                    <h5 class="card-title">Conjunto Serenity</h5>
+                    <p class="card-text">Este conjunto de treino é perfeito para quem procura conforto e estilo. Feito
+                        com tecido macio e respirável, este conjunto é ideal para atividades físicas ou simplesmente
+                        relaxar em casa com estilo.</p>
+                    <p class="fw-medium">R$ 169,00</p>
+                    <a href="#" class="btn btn-secondary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 5: Salto Glamour -->
+        <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/produto-calcado.png"
+                    alt="Pés de uma modelo com sapatos de salto alto de cor cinza e a parte superior transparente">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/produto-calcado.png"
+                    alt="Pés de uma modelo com sapatos de salto alto de cor cinza e a parte superior transparente">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/produto-calcado.png"
+                    alt="Pés de uma modelo com sapatos de salto alto de cor cinza e a parte superior transparente">
+                <div class="card-body">
+                    <h5 class="card-title">Salto Glamour</h5>
+                    <p class="card-text">Esse sapato é a definição de elegância e sofisticação. Com um design moderno e
+                        detalhes delicados, este sapato é perfeito para ocasiões especiais e para adicionar um toque de
+                        glamour a qualquer look.</p>
+                    <p class="fw-medium">R$ 219,00</p>
+                    <a href="#" class="btn btn-secondary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Produto 6: Conjunto Minimalista -->
+        <div class="col-12 col-md-6 col-xxl-4">
+            <div class="card">
+                <img class="img-fluid d-md-none d-xl-none" src="assets/mobile/produto-casal.png"
+                    alt="Casal de modelos vestindo roupas de tons claros e minimalistas">
+                <img class="img-fluid d-none d-md-block d-xl-none" src="assets/tablet/produto-casal.png"
+                    alt="Casal de modelos vestindo roupas de tons claros e minimalistas">
+                <img class="img-fluid d-none d-xl-block" src="assets/desktop/produto-casal.png"
+                    alt="Casal de modelos vestindo roupas de tons claros e minimalistas">
+                <div class="card-body">
+                    <h5 class="card-title">Conjunto Minimalista</h5>
+                    <p class="card-text">Este conjunto é ideal para casais que valorizam o estilo e a simplicidade.
+                        Composto por peças versáteis e atemporais, este conjunto é perfeito para qualquer ocasião.</p>
+                    <p class="fw-medium">R$ 350,00</p>
+                    <a href="#" class="btn btn-secondary">Ver mais</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Seção de facilidades -->
+    <section id="facilidades" class="m-1 pb-5 my-xl-5 bg-body-secondary">
+        <!-- Título da seção -->
+        <h2 class="text-center pt-4 pb-3 my-xl-5"> Conheça as nossas facilidades </h2>
+        <!-- Organização dos elementos -->
+        <div class="d-flex flex-column flex-lg-row align-items-center justify-content-center gap-5 px-3">
+            <!-- Facilidade 1: Pague pelo PIX -->
+            <div class="facilidades d-flex align-items-center">
+                <!-- Ícone -->
+                <div><i class="bi bi-x-diamond fs-1"></i></div>
+                <!-- Título e descrição -->
+                <div>
+                    <div class="ms-3 mb-1 fw-bolder">PAGUE PELO PIX</div>
+                    <div class="desc ms-3 fw-medium">Ganhe 10% de desconto em pagamentos via PIX.</div>
+                </div>
+            </div>
+
+            <!-- Facilidade 2: Troca grátis -->
+            <div class="facilidades d-flex align-items-center">
+                <div><i class="bi bi-arrow-repeat fs-1"></i></div>
+                <div>
+                    <div class="ms-3 mb-1 fw-bolder">TROCA GRÁTIS</div>
+                    <div class="desc ms-3 fw-medium">Fique livre para trocar suas peças em até 30 dias.</div>
+                </div>
+            </div>
+
+            <!-- Facilidade 3: Sustentabilidade -->
+            <div class="facilidades d-flex align-items-center">
+                <div><i class="bi bi-flower1 fs-1"></i></div>
+                <div>
+                    <div class="ms-3 mb-1 fw-bolder">SUSTENTABILIDADE</div>
+                    <div class="desc ms-3 fw-medium">Moda responsável, respeitando o meio ambiente.</div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Formulário de inscrição para receber novidades -->
+    <form id="novidades" class="border border-secondary m-5 p-3 text-center div-novidades mx-auto">
+        <h5>Quer receber nossas novidades, promoções exclusivas e 10% OFF na primeira compra? Cadastre-se!</h5>
+
+        <!-- Campo de entrada de e-mail -->
+        <div class="input-group my-3">
+            <input type="email" class="form-control border-secondary rounded-0" placeholder="Digite seu e-mail"
+                aria-label="Digite seu e-mail" aria-describedby="button-addon2" />
+            <!-- Botão de envio -->
+            <button type="button" id="button-addon2">Enviar</button>
+        </div>
+    </form>
+
+    <!-- Rodapé -->
+    <footer class="text-center pb-1 bg-body-secondary">
+    <!-- Informações do rodapé -->
+        <p class="py-3"> 2024 <i class="bi bi-c-circle"></i> Desenvolvido por Julia Sopezack. </p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
