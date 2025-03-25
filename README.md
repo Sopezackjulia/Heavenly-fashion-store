@@ -1,3 +1,5 @@
+# Heavenly - Loja de Moda Online
+
 **Heavenly** é um projeto de uma loja de moda online que oferece uma experiência de compra fácil e moderna. O site tem um design que se adapta para diferentes dispositivos, como desktop, tablet e celular. A plataforma tem várias categorias de produtos, como moda feminina, masculina, para casais, acessórios, calçados e roupas esportivas.
 
 ## Funcionalidades:
